@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/lenovo/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/4143921d-3042-41e3-bd32-573e8299794f/d48e9685-6a46-4933-8cac-79fccb0f722f/skills/docx/**)",
+      "Bash(pandoc \"C:/Users/lenovo/Downloads/fatum_app_store_listing.docx\" -o /tmp/listing.md --track-changes=all)",
+      "Bash(pandoc \"C:/Users/lenovo/Downloads/fatum_tech_spec.docx\" -o /tmp/tech_spec.md --track-changes=all)",
+      "Bash(pandoc \"C:/Users/lenovo/Downloads/fatum_prd.docx\" -o /tmp/prd.md --track-changes=all)",
+      "Bash(where pandoc:*)",
+      "Bash(python -c ':*)",
+      "Bash(echo \"exit: $?\")",
+      "Read(//e/Claude code/**)",
+      "Bash(rm -rf fatum-web)"
+    ]
+  }
+}
