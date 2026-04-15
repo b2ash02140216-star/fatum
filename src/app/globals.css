@@ -46,75 +46,94 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  /* Fatum custom tokens */
+  --color-gold: var(--gold);
+  --color-gold-muted: var(--gold-muted);
+  --color-cosmic-purple: var(--cosmic-purple);
+  --color-cosmic-violet: var(--cosmic-violet);
+  --color-cosmic-glow: var(--cosmic-glow);
 }
 
+/* Fatum is always dark — light mode intentionally not supported */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(0.08 0.018 285);
+  --foreground: oklch(0.94 0.012 80);
+  --card: oklch(0.12 0.022 285);
+  --card-foreground: oklch(0.94 0.012 80);
+  --popover: oklch(0.12 0.022 285);
+  --popover-foreground: oklch(0.94 0.012 80);
+  --primary: oklch(0.78 0.14 88);
+  --primary-foreground: oklch(0.10 0.02 285);
+  --secondary: oklch(0.18 0.03 285);
+  --secondary-foreground: oklch(0.94 0.012 80);
+  --muted: oklch(0.18 0.03 285);
+  --muted-foreground: oklch(0.60 0.04 285);
+  --accent: oklch(0.28 0.06 285);
+  --accent-foreground: oklch(0.94 0.012 80);
+  --destructive: oklch(0.65 0.22 25);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.78 0.14 88 / 60%);
+  --chart-1: oklch(0.78 0.14 88);
+  --chart-2: oklch(0.60 0.15 285);
+  --chart-3: oklch(0.48 0.12 285);
+  --chart-4: oklch(0.35 0.08 285);
+  --chart-5: oklch(0.22 0.04 285);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.10 0.02 285);
+  --sidebar-foreground: oklch(0.94 0.012 80);
+  --sidebar-primary: oklch(0.78 0.14 88);
+  --sidebar-primary-foreground: oklch(0.10 0.02 285);
+  --sidebar-accent: oklch(0.18 0.03 285);
+  --sidebar-accent-foreground: oklch(0.94 0.012 80);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.78 0.14 88 / 60%);
+  /* Fatum custom */
+  --gold: oklch(0.78 0.14 88);
+  --gold-muted: oklch(0.60 0.10 88);
+  --cosmic-purple: oklch(0.28 0.06 285);
+  --cosmic-violet: oklch(0.48 0.12 285);
+  --cosmic-glow: oklch(0.60 0.15 285 / 20%);
 }
 
+/* Mirror dark class for components that use .dark selector */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(0.08 0.018 285);
+  --foreground: oklch(0.94 0.012 80);
+  --card: oklch(0.12 0.022 285);
+  --card-foreground: oklch(0.94 0.012 80);
+  --popover: oklch(0.12 0.022 285);
+  --popover-foreground: oklch(0.94 0.012 80);
+  --primary: oklch(0.78 0.14 88);
+  --primary-foreground: oklch(0.10 0.02 285);
+  --secondary: oklch(0.18 0.03 285);
+  --secondary-foreground: oklch(0.94 0.012 80);
+  --muted: oklch(0.18 0.03 285);
+  --muted-foreground: oklch(0.60 0.04 285);
+  --accent: oklch(0.28 0.06 285);
+  --accent-foreground: oklch(0.94 0.012 80);
+  --destructive: oklch(0.65 0.22 25);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.78 0.14 88 / 60%);
+  --chart-1: oklch(0.78 0.14 88);
+  --chart-2: oklch(0.60 0.15 285);
+  --chart-3: oklch(0.48 0.12 285);
+  --chart-4: oklch(0.35 0.08 285);
+  --chart-5: oklch(0.22 0.04 285);
+  --sidebar: oklch(0.10 0.02 285);
+  --sidebar-foreground: oklch(0.94 0.012 80);
+  --sidebar-primary: oklch(0.78 0.14 88);
+  --sidebar-primary-foreground: oklch(0.10 0.02 285);
+  --sidebar-accent: oklch(0.18 0.03 285);
+  --sidebar-accent-foreground: oklch(0.94 0.012 80);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.78 0.14 88 / 60%);
+  --gold: oklch(0.78 0.14 88);
+  --gold-muted: oklch(0.60 0.10 88);
+  --cosmic-purple: oklch(0.28 0.06 285);
+  --cosmic-violet: oklch(0.48 0.12 285);
+  --cosmic-glow: oklch(0.60 0.15 285 / 20%);
 }
 
 @layer base {
@@ -127,4 +146,66 @@
   html {
     @apply font-sans;
   }
+  /* Shared form field style used across console modals */
+  .field-input {
+    height: 2.75rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid oklch(1 0 0 / 8%);
+    background: oklch(1 0 0 / 5%);
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.75);
+    outline: none;
+    transition: border-color 0.15s;
+    font-family: var(--font-geist-mono), monospace;
+  }
+  .field-input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .field-input:focus {
+    border-color: oklch(1 0 0 / 20%);
+  }
+  /* Kill browser's number input spin buttons */
+  .field-input[type="number"]::-webkit-outer-spin-button,
+  .field-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+/* Fatum utility: glowing gold text */
+@layer utilities {
+  .text-gold {
+    color: var(--gold);
+  }
+  .glow-gold {
+    text-shadow: 0 0 20px oklch(0.78 0.14 88 / 40%);
+  }
+  .glow-violet {
+    box-shadow: 0 0 40px oklch(0.48 0.12 285 / 15%);
+  }
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Terminal text stream */
+@keyframes fadeInLine {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.line-in {
+  animation: fadeInLine 0.15s ease-out forwards;
+}
+
+/* Scan line flicker (subtle) */
+@keyframes scanline {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 100%; }
 }
